@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+</head>
+
+<body>
+    <form id="form">
+        <div>
+            <label>Nom :</label>
+            <input type="text" id="firstname">
+        </div>
+        <div>
+            <label>Adresse :</label>
+            <input type="text" id="address">
+        </div>
+        <div>
+            <label>Email :</label>
+            <input type="text" id="email">
+        </div>
+        <div>
+            <label>Téléphone :</label>
+            <input type="text" id="phone">
+        </div>
+        <div>
+            <label>type de logement</label>
+            <select id="typeLogement" name="typeLogement" required>
+                <option value="">Sélectionnez...</option>
+                <option value="maison">Maison</option>
+                <option value="appartement">Appartement</option>
+            </select>
+        </div>
+        <div>
+            <label for="">nombre de persone</label>
+            <input type="text" id="personne">
+        </div>
+        <div>
+            <label for="datearrive">date d'arrive</label>
+            <input type="date" id="datearrive">
+        </div>
+        <div>
+            <label for="datedepart">date de depart</label>
+            <input type="date" id="datedepart">
+        </div>
+        <div>
+            <label for="servicesupp">service supplementaire</label>
+            <input type="checkbox" name="" id="chauffeur">chauffeur
+            <input type="checkbox" name="" id="petitdej">petit dejeuner
+            <input type="checkbox" name="" id="guide">guide
+        </div>
+        <div>
+            <label for="regimealim">regime alimentaire</label>
+            <input type="text" id="dietSection">dietsection
+        </div>
+
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <div id="result" class="error"></div>
+    <div id="choixlog"></div>
+    <div id="date"></div>
+    <div id="date1"></div>
+    <div id="nbrpers"></div>
+    <div id="voiture"></div>
+    <div id="matin"></div>
+    <div id="aide"></div>
+    <div id="rien"></div>
+    <div id="prix"></div>
+</body>
+<script src="./script.js"></script>
+
+</html>
